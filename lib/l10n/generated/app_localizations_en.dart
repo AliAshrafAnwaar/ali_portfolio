@@ -76,7 +76,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get stat1Label => 'Shipped projects with real users';
 
   @override
-  String get stat2Label => 'Avg. retention lift for clients';
+  String get stat2Label => 'Happy clients';
 
   @override
   String get stat3Label => 'Building cross-platform apps';

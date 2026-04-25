@@ -24,7 +24,7 @@ class ExperienceFactoryDataSource implements ExperienceDataSource {
         period: 'Jun 2024 — Feb 2025',
         role: 'Flutter Developer',
         description:
-            'Built cross-platform apps for early-stage startups, improving user engagement and retention by 30%. Delivered full-stack Firebase solutions with secure authentication and custom error handling, enhancing data security by 20%.',
+            'Built cross-platform apps for early-stage startups, improving user engagement and app usability. Delivered full-stack Firebase solutions with secure authentication and custom error handling, enhancing data security by 20%.',
         type: EmploymentType.freelance,
       ),
     ];

@@ -77,7 +77,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get stat1Label => 'مشاريع مُطلقة مع مستخدمين حقيقيين';
 
   @override
-  String get stat2Label => 'متوسط زيادة الاحتفاظ بالعملاء';
+  String get stat2Label => 'عملاء سعداء';
 
   @override
   String get stat3Label => 'في بناء تطبيقات متعددة المنصات';

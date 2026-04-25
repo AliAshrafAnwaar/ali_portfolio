@@ -33,18 +33,30 @@ class SkillRow extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          SizedBox(
-            width: 110,
-            child: Text(
-              label,
-              style: AppTextStyles.mono(
-                size: 11,
-                letterSpacing: 0.05,
+          Expanded(
+            flex: 2,
+            child: Align(
+              alignment: Alignment.centerLeft,
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 140),
+                child: Text(
+                  label,
+                  style: AppTextStyles.mono(
+                    size: 11,
+                    letterSpacing: 0.05,
+                  ),
+                ),
               ),
             ),
           ),
-          const SizedBox(width: AppSpacing.xl),
-          Expanded(child: _Tags(tags: tags)),
+          const SizedBox(width: AppSpacing.xl4),
+          Expanded(
+            flex: 3,
+            child: Align(
+              alignment: Alignment.centerLeft,
+              child: _Tags(tags: tags),
+            ),
+          ),
         ],
       ),
     );

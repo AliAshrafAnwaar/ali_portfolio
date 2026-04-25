@@ -4,6 +4,7 @@ import '../../../../core/theme/app_colors.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_text_styles.dart';
 import '../../../../core/widgets/pills/neutral_pill.dart';
+import '../../../../core/utils/url_opener.dart';
 import '../../domain/entities/project.dart';
 
 class ProjectCard extends StatefulWidget {
@@ -21,12 +22,14 @@ class _ProjectCardState extends State<ProjectCard> {
   @override
   Widget build(BuildContext context) {
     final hovering = _hovering;
+    final onTap = widget.onTap ??
+        (widget.project.url != null ? () => UrlOpener.open(widget.project.url!) : null);
     return MouseRegion(
-      cursor: SystemMouseCursors.click,
+      cursor: onTap != null ? SystemMouseCursors.click : SystemMouseCursors.basic,
       onEnter: (_) => setState(() => _hovering = true),
       onExit: (_) => setState(() => _hovering = false),
       child: GestureDetector(
-        onTap: widget.onTap,
+        onTap: onTap,
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 200),
           curve: Curves.easeOut,

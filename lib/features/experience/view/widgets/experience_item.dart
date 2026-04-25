@@ -75,9 +75,27 @@ class ExperienceItem extends StatelessWidget {
           : Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SizedBox(width: 200, child: left),
+                Expanded(
+                  flex: 2,
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: ConstrainedBox(
+                      constraints: const BoxConstraints(maxWidth: 240),
+                      child: left,
+                    ),
+                  ),
+                ),
                 const SizedBox(width: AppSpacing.xl4),
-                Expanded(child: right),
+                Expanded(
+                  flex: 3,
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: ConstrainedBox(
+                      constraints: const BoxConstraints(maxWidth: 560),
+                      child: right,
+                    ),
+                  ),
+                ),
               ],
             ),
     );

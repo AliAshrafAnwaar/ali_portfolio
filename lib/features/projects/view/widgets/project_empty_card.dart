@@ -14,7 +14,6 @@ class ProjectEmptyCard extends StatelessWidget {
       radius: AppRadius.card,
       color: AppColors.border2,
       child: Container(
-        constraints: const BoxConstraints(minHeight: 180),
         alignment: Alignment.center,
         padding: const EdgeInsets.all(AppSpacing.xl),
         child: Text(

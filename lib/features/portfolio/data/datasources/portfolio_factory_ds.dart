@@ -16,16 +16,16 @@ class PortfolioFactoryDataSource implements PortfolioDataSource {
       location: 'Alexandria, Egypt',
       email: 'aliashrafanwaar@gmail.com',
       phone: '+201025591901',
-      linkedIn: 'https://www.linkedin.com/in/ali-ashraf-anwar',
-      github: 'https://github.com/ali-ashraf-anwar',
+      linkedIn: 'https://www.linkedin.com/in/aliashraf899/',
+      github: 'https://github.com/AliAshrafAnwaar',
       whatsapp: 'https://wa.me/201025591901',
       resumeUrl:
           'https://drive.google.com/file/d/1PEeUn-aSc4sLOD--OEKtAx0ln39Bdtv5/view?usp=sharing',
-      idCardSubtitle: 'Software Engineer · BSc CS & AI, GPA 3.48',
-      stackTags: ['Flutter', 'React', 'Laravel'],
+      idCardSubtitle: 'Software Engineer · BSc CS & AI',
+      stackTags: ['React', 'Laravel', 'AI integration', 'Flutter'],
       stats: [
-        Stat(value: '3+', labelKey: 'stat1Label'),
-        Stat(value: '30%', labelKey: 'stat2Label'),
+        Stat(value: '10+', labelKey: 'stat1Label'),
+        Stat(value: '2+', labelKey: 'stat2Label'),
         Stat(value: '2y+', labelKey: 'stat3Label'),
       ],
     );

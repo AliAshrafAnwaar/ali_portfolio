@@ -233,7 +233,7 @@ abstract class AppLocalizations {
   /// No description provided for @stat2Label.
   ///
   /// In en, this message translates to:
-  /// **'Avg. retention lift for clients'**
+  /// **'Happy clients'**
   String get stat2Label;
 
   /// No description provided for @stat3Label.

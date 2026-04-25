@@ -59,14 +59,32 @@ class _Grid extends StatelessWidget {
       );
     }
 
-    return GridView.count(
-      crossAxisCount: 2,
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
-      mainAxisSpacing: AppSpacing.md,
-      crossAxisSpacing: AppSpacing.md,
-      childAspectRatio: 1.55,
-      children: children,
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        const spacing = AppSpacing.md;
+        final cardWidth = (constraints.maxWidth - spacing) / 2;
+
+        return Column(
+          children: [
+            for (var i = 0; i < children.length; i += 2) ...[
+              if (i > 0) const SizedBox(height: spacing),
+              IntrinsicHeight(
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    SizedBox(width: cardWidth, child: children[i]),
+                    const SizedBox(width: spacing),
+                    if (i + 1 < children.length)
+                      SizedBox(width: cardWidth, child: children[i + 1])
+                    else
+                      SizedBox(width: cardWidth),
+                  ],
+                ),
+              ),
+            ],
+          ],
+        );
+      },
     );
   }
 }
