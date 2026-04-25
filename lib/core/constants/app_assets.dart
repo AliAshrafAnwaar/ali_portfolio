@@ -1,4 +1,4 @@
 class AppAssets {
   AppAssets._();
-  static const String avatar = 'images/Avatar.png';
+  static const String avatar = 'assets/images/Avatar.png';
 }
