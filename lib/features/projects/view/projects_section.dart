@@ -68,18 +68,16 @@ class _Grid extends StatelessWidget {
           children: [
             for (var i = 0; i < children.length; i += 2) ...[
               if (i > 0) const SizedBox(height: spacing),
-              IntrinsicHeight(
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    SizedBox(width: cardWidth, child: children[i]),
-                    const SizedBox(width: spacing),
-                    if (i + 1 < children.length)
-                      SizedBox(width: cardWidth, child: children[i + 1])
-                    else
-                      SizedBox(width: cardWidth),
-                  ],
-                ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  SizedBox(width: cardWidth, child: children[i]),
+                  const SizedBox(width: spacing),
+                  if (i + 1 < children.length)
+                    SizedBox(width: cardWidth, child: children[i + 1])
+                  else
+                    SizedBox(width: cardWidth),
+                ],
               ),
             ],
           ],

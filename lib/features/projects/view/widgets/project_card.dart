@@ -68,9 +68,23 @@ class _ProjectCardState extends State<ProjectCard> {
                 ],
               ),
               const SizedBox(height: AppSpacing.lg),
-              Text(widget.project.name, style: AppTextStyles.projectName),
+              Text(
+                widget.project.name,
+                style: AppTextStyles.projectName,
+                textHeightBehavior: const TextHeightBehavior(
+                  applyHeightToFirstAscent: false,
+                  applyHeightToLastDescent: false,
+                ),
+              ),
               const SizedBox(height: AppSpacing.xs),
-              Text(widget.project.description, style: AppTextStyles.projectDesc),
+              Text(
+                widget.project.description,
+                style: AppTextStyles.projectDesc,
+                textHeightBehavior: const TextHeightBehavior(
+                  applyHeightToFirstAscent: false,
+                  applyHeightToLastDescent: false,
+                ),
+              ),
               const SizedBox(height: AppSpacing.lg),
               Wrap(
                 spacing: 5,
