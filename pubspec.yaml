@@ -1,0 +1,54 @@
+name: ali_portfolio
+description: "Ali Ashraf Anwar — Personal Portfolio (Flutter, MVVM + BLoC + Dio)."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State management (ViewModel layer)
+  flutter_bloc: ^9.1.1
+  bloc: ^9.0.0
+  equatable: ^2.0.7
+
+  # Functional error handling
+  dartz: ^0.10.1
+
+  # Networking
+  dio: ^5.7.0
+  pretty_dio_logger: ^1.4.0
+
+  # Dependency injection
+  get_it: ^8.0.3
+
+  # Routing
+  go_router: ^14.6.2
+
+  # UI / fonts / animation
+  google_fonts: ^6.2.1
+  flutter_animate: ^4.5.2
+  cupertino_icons: ^1.0.8
+
+  # Storage / utilities
+  shared_preferences: ^2.3.3
+  url_launcher: ^6.3.1
+  intl: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  bloc_test: ^10.0.0
+  mocktail: ^1.0.4
+
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/images/
