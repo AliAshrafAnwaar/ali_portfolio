@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../core/theme/app_spacing.dart';
-import '../../../core/widgets/loaders/error_view.dart';
-import '../../../core/widgets/loaders/shimmer_card.dart';
-import '../../../l10n/generated/app_localizations.dart';
-import '../view_model/skills_cubit.dart';
-import 'widgets/skill_row.dart';
+import '../../../../core/theme/app_spacing.dart';
+import '../../../../core/widgets/loaders/error_view.dart';
+import '../../../../core/widgets/loaders/shimmer_card.dart';
+import '../../../../l10n/generated/app_localizations.dart';
+import '../../view_model/skills_cubit.dart';
+import 'skill_row.dart';
 
 class SkillsSection extends StatelessWidget {
   const SkillsSection({super.key});

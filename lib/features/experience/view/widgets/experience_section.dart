@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../core/theme/app_spacing.dart';
-import '../../../core/widgets/loaders/error_view.dart';
-import '../../../core/widgets/loaders/shimmer_card.dart';
-import '../view_model/experience_cubit.dart';
-import 'widgets/experience_item.dart';
+import '../../../../core/theme/app_spacing.dart';
+import '../../../../core/widgets/loaders/error_view.dart';
+import '../../../../core/widgets/loaders/shimmer_card.dart';
+import '../../view_model/experience_cubit.dart';
+import 'experience_item.dart';
 
 class ExperienceSection extends StatelessWidget {
   const ExperienceSection({super.key});

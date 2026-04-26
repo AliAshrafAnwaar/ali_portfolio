@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../core/theme/app_spacing.dart';
-import '../../../core/utils/responsive.dart';
-import '../../../core/widgets/loaders/error_view.dart';
-import '../../../core/widgets/loaders/shimmer_card.dart';
-import '../../../l10n/generated/app_localizations.dart';
-import '../domain/entities/project.dart';
-import '../view_model/projects_cubit.dart';
-import 'widgets/project_card.dart';
-import 'widgets/project_empty_card.dart';
+import '../../../../core/theme/app_spacing.dart';
+import '../../../../core/utils/responsive.dart';
+import '../../../../core/widgets/loaders/error_view.dart';
+import '../../../../core/widgets/loaders/shimmer_card.dart';
+import '../../../../l10n/generated/app_localizations.dart';
+import '../../domain/entities/project.dart';
+import '../../view_model/projects_cubit.dart';
+import 'project_card.dart';
+import 'project_empty_card.dart';
 
 class ProjectsSection extends StatelessWidget {
   const ProjectsSection({super.key});
